@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "SweetAlert";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+
+<button class="btn btn-primary" id="btn1">Düğme</button>
+<button class="btn btn-primary" id="btn2">Düğme</button>
+
+<script>
+    $('#btn1').click(function () { swal("Hello world!"); });
+</script>
+
+<script>
+    $('#btn2').click(function () { swal("Mvc Proje Kampı", "Merhaba"); });
+</script>
+
+
+
+@*Komutları şu siteden aldım -----> https://sweetalert.js.org/guides/*@
